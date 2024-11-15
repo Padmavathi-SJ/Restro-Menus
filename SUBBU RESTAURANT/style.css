@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto+Slab:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.home{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("C:\Users\padma\OneDrive\Desktop\SUBBU RESTAURANT\home page images\non veg noodles.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: auto;
+    background-position: center center;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(12,11, 9,0.5);
+    color: #fff;
+    padding: 10px 150px;
+}
+
+nav .logo h1{
+  text-transform: uppercase;
+  color: #CDA45E;
+  font-size: 25px;
+
+}
+
+nav .logo h1 span{
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: lowercase;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: 0.4s ease; 
+}
+
+nav ul li a:hover{
+    color: #CDA45E;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    margin-top: -50px;
+
+}
+
+.banner h2{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border: 1px solid #CDA45E;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.banner h2 span{
+    color: #CDA45E;
+    font-size: 30px;
+}
+.banner h3{
+    color: #fff;
+    padding: 20px;
+    font-weight: 15px;
+    font-size: 29px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.special{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+/***food box -special - whole boxes ***/
+
+.special{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 60vh;
+    padding: 50px;
+    
+}
+.special .special-box{
+ height: 270px;
+ width: 190px;
+ background: rgba(0,0,0,0.6);
+ border-top-right-radius: 100px;
+ border-top-left-radius: 100px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ border: 3px solid #CDA45E;
+ margin: 25px;
+ 
+ 
+
+}
+
+.special .special-box img{
+    height: 120px;
+    width: 120px;
+    background: #CDA45E;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 5px;
+}
+
+.special .special-box h2{
+    color: #CDA45E;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.special .special-box h3{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.special .special-box .add-cart{
+    padding: 5px 10px;
+    margin: 10px;
+    border: 2px solid #CDA45E;
+    outline: 0;
+    background-color: transparent;
+    color: #CDA45E;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.special .special-box .add-cart{
+    color: #CDA45E;
+    background-color: #292929;
+}

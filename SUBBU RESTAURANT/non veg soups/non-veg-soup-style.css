@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto+Slab:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/*-----------Header Section----------*/
+.non-veg-soups{
+    min-height: 150vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("https://wavesinnhotel.com/en/wp-content/uploads/2019/12/Non-Veg-Soup.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow: auto;
+    background-position: center center;
+}
+
+.header{
+    background: rgba(12,11,9,0.6);
+    height: 200px;
+}
+
+header h1{
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 30px 0 20px 0;
+    text-transform: uppercase;
+    background: rgba(12,11, 9,0.6);
+}
+
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(12,11, 9,0.6);
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    list-style: none;
+    padding: 10px;
+}
+
+header nav ul:nth-child(8) a{
+  color: red;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size:  16px;
+    font-weight: 600;
+    transition: 0.4s ease;
+}
+
+header nav ul li a:hover{
+    color: #CDA45E;
+}
+
+.btn-add-cart{
+    padding: 5px 30px;
+    margin-left: 30px;
+    border: 0;
+    outline: 0;
+    color: #CDA45E;
+    background-color: transparent;
+    border: 2px solid #CDA45E;
+    font-size: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.4s ease-in;
+    
+}
+
+.btn-add-cart:hover{
+    background-color: #CDA45E;
+    color: #292929;
+}
+
+.btn-add-cart i{
+    margin-left: 10px;
+}
+
+/*------------------Food Section------------*/
+
+/*-----------Cntainer-chicken-soup-----------*/
+.chicken-soup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 60vh;
+    padding: 50px;
+    margin: 100px;
+
+
+}
+.chicken-soup .food-box{
+ height: 270px;
+ width: 160px;
+ background: rgba(0,0,0,0.6);
+ border-top-right-radius: 100px;
+ border-top-left-radius: 100px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ border: 3px solid #CDA45E;
+ margin: 30px;
+
+}
+
+.chicken-soup .food-box img{
+    height: 100px;
+    width: 100px;
+    background: #CDA45E;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 5px;
+}
+
+.chicken-soup .food-box h2{
+    color: #CDA45E;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.chicken-soup .food-box h3{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.chicken-soup .food-box .add-cart{
+    padding: 5px 10px;
+    margin: 10px;
+    border: 2px solid #CDA45E;
+    outline: 0;
+    background-color: transparent;
+    color: #CDA45E;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.chicken-soup .food-box .add-cart{
+    color: #CDA45E;
+    background-color: #292929;
+}
+

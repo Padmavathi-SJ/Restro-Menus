@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto+Slab:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/*-----------Header Section----------*/
+.breakfast{
+    min-height: 230vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)), url("https://vaya.in/wp-content/uploads/2021/02/10-Indian-Breakfast-Dishes-Perfect-to-Start-Your-Day-with.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.header{
+    background: rgba(12,11,9,0.6);
+    height: 200px;
+    border-bottom: 2px solid rgba(12,11,9,0.9);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+header h1{
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 30px 0 20px 0;
+    text-transform: uppercase;
+    background: rgba(12,11, 9,0.6);
+}
+
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(12,11, 9,0.6);
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    list-style: none;
+    padding: 10px;
+}
+
+header nav ul:nth-child(8) a{
+  color: red;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size:  16px;
+    font-weight: 600;
+    transition: 0.4s ease;
+}
+
+header nav ul li a:hover{
+    color: #CDA45E;
+}
+
+.btn-cart{
+    padding: 5px 30px;
+    margin-left: 30px;
+    border: 0;
+    outline: 0;
+    color: #CDA45E;
+    background-color: transparent;
+    border: 2px solid #CDA45E;
+    font-size: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.4s ease-in;
+    
+}
+
+.btn-cart:hover{
+    background-color: #CDA45E;
+    color: #292929;
+}
+
+.btn-cart i{
+    margin-left: 10px;
+}
+
+.cart-count{
+    position: absolute;
+    background-color: #CDA45E;
+    color: #292929;
+    text-align: center;
+    top: 45px;
+    right: 470px;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    line-height: 25px;
+    border-radius: 50%;
+    font-weight: 600;
+    z-index: 10;
+}
+
+/*--------cart section-------*/
+
+.cart{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 400px;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: rgba(12,11,9,1);
+    color: #CDA45E;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: rgba(12,11,9,1);
+    box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+    padding: 20px;
+    z-index: 100;
+}
+
+.cart-active{
+    right: 0;
+    transition: 0.4s ease;
+}
+.cart-title{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cda45e7a;
+}
+
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #CDA45E;
+}
+
+.cart-img{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-color: #292929;
+    padding: 5px;
+}
+
+.detail-box{
+  display: grid;
+  row-gap: 15px;
+}
+.price-box{
+    display: flex;
+    justify-content: space-between;
+}
+.cart-food-title{
+    font-size: 14px;
+    font-weight: 500;
+}
+.cart-price{
+    font-weight: 600;
+}
+.cart-amt{
+    font-weight: 600;
+}
+.cart-quantity{
+    background-color: #CDA45E;
+    color: #292929;
+    border: none;
+    outline:none;
+    width: 40px;
+    height: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+.cart-remove{
+    font-size: 25px;
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.total-title{
+    font-size: 15px;
+    font-weight: 600;
+}
+.total-price{
+    margin-left: 20px;
+    font-weight: 500;
+}
+.cart .btn-buy{
+    padding: 10px;
+    border: none;
+    outline: 0;
+    background: transparent;
+    border: 2px solid #CDA45E;
+    color: #CDA45E;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    font-weight: 500;
+}
+.cart .btn-buy:hover{
+    color: #292929;
+    background: #CDA45E;
+}
+#cart-close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/*------------------Food Section------------*/
+
+/*-----------Cntainer-Idly-----------*/
+
+.idly{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 60vh;
+    padding: 50px;
+    margin: 150px;
+    margin-top: -20px;
+    position: absolute;
+    top: 150px;
+     
+}
+.idly .food-box{
+ height: 270px;
+ width: 160px;
+ background: rgba(0,0,0,0.6);
+ border-top-right-radius: 100px;
+ border-top-left-radius: 100px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ border: 3px solid #CDA45E;
+ margin: 30px;
+
+}
+
+.idly .food-box img{
+    height: 100px;
+    width: 100px;
+    background: #CDA45E;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 5px;
+}
+.idly .food-box img:hover{
+    transform: scale(1);
+}
+.idly .food-box h2{
+    color: #CDA45E;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.idly .food-box h3{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.idly .food-box .add-cart{
+    padding: 5px 10px;
+    margin: 10px;
+    border: 2px solid #CDA45E;
+    outline: 0;
+    background-color: transparent;
+    color: #CDA45E;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.idly .food-box .add-cart:hover{
+    color: #292929;
+    background-color: #CDA45E;
+}
+
+
